@@ -222,7 +222,7 @@ nav div a {
 
 .trending a {
     text-decoration: none;
-    color: rgba(12, 128, 252, 0.91);
+    color: rgb(0, 0, 255);
 }
 
 .trending a:hover {
