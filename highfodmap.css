@@ -1,0 +1,224 @@
+/* This is the navigation bar that needs to be consistent */
+body, h1, h2, h3, p, ul, li, a {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal; 
+}
+
+/* this is turn the top navbar purple */
+.topnav {
+  align-items: center;
+  background-color: rgb(114, 14, 158);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* ths is show how the website name to look, in terms of having a larger size and a white colour (against the purple background)  */
+.website-name {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+/* This is to align all the items in the navigation bar */
+.nav-items, .dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+/* This is to design the navigation items, putple with white letters, also when the cursor goes over the Dropdown Button it changes to a pointer */
+.nav-items a, .dropbtn, .dropdown {
+  background-color: rgb(114, 14, 158);
+  color: white;
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* This hides the HIGH FODMAP and LOW FODMAP that was previously showing there  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(114, 14, 158);
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  /* The items will appear as a block */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* So that the page links have black text and display as a block */
+.dropdown-content a {
+   color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* The links to turn grey when you hover over them */
+.dropdown-content a:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+/*this is to change the button specifically to gold*/
+.nav-items a.button {
+  background-color: rgb(155, 135, 0);
+  padding: 10px 20px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px
+}
+/* Align as a block and in the center */
+.topnav a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* website name is white */
+.topnav a.website-name{
+  color: white;
+}
+/* text turns black and a grey box appears when hovered over */
+.topnav a:hover {
+  background-color: rgb(238, 239, 240);
+  color: black;
+}
+
+/* This is to make the button to turn grey when you hover over it */
+.topnav button:hover {
+  background-color: rgb(238, 239, 240);
+  color: black;
+}
+/* put navigation items in a inline, with spacing with white text and no underlines */
+nav a {
+  list-style: none;
+  padding: 0;
+}
+
+nav div a {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav div a {
+  color: white;
+  text-decoration: none;
+}
+/* This CSS is just for reference, if I was actually able to create a search bar, this would be the style */
+.search-bar input { 
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  } 
+/* standard font for body text */
+  body {
+    font-family: Arial, sans-serif;
+}
+/* sets image size */
+.highfodmapimage {
+    width: 70%;
+    margin: auto;
+}
+/* items to be centered in the flex container and have space inbetween  */
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-top: 20px
+}
+/* sets image size */
+.item img {
+    width: 35%;
+    margin-right: 20px;
+}
+/* sets text size */
+.description {
+    width: 50%;
+    text-align: left;
+}
+
+/*10px of padding around the top and bottom of the footer, whilst no padding is applied to the left and right of the area.*/
+footer {
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgb(114, 14, 158);
+    color: white;
+}
+
+/* This is tpo change the color of the sitemap link to white */
+footer .sitemap a {
+  color: white;
+}
+/* This is to make the website resposive */
+@media only screen and (max-width: 768px) {
+  header {
+    margin: 0;
+    padding: 0;
+    width: 107%;
+    font-size: 9px;
+}  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+}
+
+  /* This is to make sure the container can enclose its items */
+  @media (max-width: 844px) {
+    .item {
+      flex-direction: column; /* This is to put the picture and text in a column */     
+    }
+  }
+
+  /* This is to make sure the container can enclose its items */
+  @media (max-width: 844px) {
+    .fodmapimage {
+      width: 108% !important;
+      height: auto !important;
+   }
+  }
+
+  /* This is to make sure the container can enclose its items */
+    @media (max-width: 844px) {
+      .description {
+        width: 108% !important;
+        height: auto !important;
+        font-size: 13px !important;
+     }
+    }
+
+  /* This is to make sure the container can enclose its items */
+    @media (max-width: 844px) {
+      .footer {
+        width: 100% !important;
+        height: auto !important;
+        font-size: 13px !important;
+    }
+    }
+
