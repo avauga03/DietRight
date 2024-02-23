@@ -1,0 +1,33 @@
+/* this is the font for the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* this creates the space inbetween each line within the list */
+#sitemap li {
+    margin-bottom: 20px;
+}
+
+/* makes the links blue */
+#sitemap a {
+    color: rgba(12, 128, 252, 0.91);
+    text-decoration: none;
+}
+
+/* Changes the background color of links to grey when hovered over */
+#sitemap a:hover {
+    background-color: rgb(221, 221, 221);
+}
+/* makes padding */
+#sitemap ul {
+    padding-left: 20px;
+}
+
+/* For mobile resonsiveness, to fit on the screen */
+
+@media screen and (max-width: 2000px) {
+    body {
+        font-size: 29px;
+        padding-left: 45px;
+    }
+}
